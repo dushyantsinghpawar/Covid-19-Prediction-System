@@ -1,0 +1,88 @@
+<html>
+<head>	
+<style>
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        
+    }
+ .container1 {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+                
+    }
+table {
+    float:left;
+    width:25%;
+}
+
+</style>
+
+</head>
+
+
+<body style="background-image: url('static/coronav.jpg');background-repeat: no-repeat;background-attachment: fixed; background-size: cover;">
+
+  <div class="container">
+    <h1 style="color:white;text-align:center; font_face=Century Gothic; size=6; color=purple">COVID19 PROPHET FORECASTING</h1>
+    <h2 style="color:white;text-align:center">COVID19 CASES PREDICTION</h2>
+  </div>
+
+  
+<div class="container1">
+<h1 style="color:white;"></h1>
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+
+<h2 style="color:white;">TOTAL CONFIRMED</h2>
+
+
+  {% for table in confirm %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}
+
+
+<h2 style="color:white; text_align:right">TOTAL ACTIVE</h2>
+
+  {% for table in active %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}
+
+<br>
+
+<h2 style="color:white;">TOTAL RECOVERED</h2>
+
+  {% for table in recover %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}
+
+<h2 style="color:white;">TOTAL DEATHS</h2>
+
+  {% for table in deaths %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}
+</div>
+
+
+
+<center>
+<a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html?s_cid=bb-coronavirus-2019-ncov-NCIRD" title="image of SARS-CoV-2"><img src="http://www.cdc.gov/coronavirus/2019-ncov/images/Coronavirus-badge-300.png" align="middle" style="align:center width:300px; height:250px; border:0px;" alt="image of Coronavirus Disease 2019 (COVID-19)" /></a>
+<h2 style="color:white;">For more Information click here:</h2>
+<br>
+</center>
+
+<br><br>
+
+
+
+<br><br><br>
+
+</body>
+</html>
+ 

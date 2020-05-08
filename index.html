@@ -1,0 +1,59 @@
+<html>
+<head>	
+<style>
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        
+    }
+ .container1 {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        
+    }
+ .wrapper{
+   
+   }   
+</style>
+</head> 
+<body style=" background-image:url('/static/coronav.jpg');background-repeat: no-repeat;background-attachment: scroll; background-size:cover;">
+<form action="{{ url_for('predict')}}" method="POST">
+    <div class="container">
+    <h1 style="color:white;text-align:center;font_face=Century Gothic">COVID19 PROPHET FORECASTING</h1>
+    <hr>
+    <br>
+    <center><label style="color:white;font-size:30px; text-align:center;">Predict the Number of Corona Virus Cases <br> </label>
+    <br><br>
+    <label for="Days" style="color:white; font-size:24px; font-family:Charcoal ; text-align:center;">Enter number of days: </label>  
+    
+    <input type="number" id="Days" name="Days">
+    <button type="submit" class="registerbtn" align="center">Predict</button>
+</form>    
+</center>
+<br>
+<br><br><br>
+<h1 style="color:white;">General Symptoms:</h1>
+<ul>
+<li style="color:white;font-size:22px;">Fever</li>
+<li style="color:white;font-size:22px;">Tiredness</li>
+<li style="color:white;font-size:22px;">Dry cough</li>
+</ul>
+<h1 style="color:white;">Some people may experience:</h1>
+<ul>
+<li style="color:white;font-size:22px;">Aches and Pains</li>
+<li style="color:white;font-size:22px;">Nasal Congestion</li>
+<li style="color:white;font-size:22px;">Runny Nose</li>
+<li style="color:white;font-size:22px;">Sore Throat</li>
+<li style="color:white;font-size:22px;">Diarrhoea</li>
+</ul>
+<br><br>
+<h1 style="color:white;text-align:center;">Watch the video to know more:</h1>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/3qYO4K0gtDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+</div>
+<hr>
+<h4 style="color:white; text-align:center">“At the end of the day, the goals are simple: Safety and security."</h4>
+</body>
+</html>
