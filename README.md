@@ -1,4 +1,4 @@
-# prediction-using-prophet
+# Covid-19 Prediction System
 This project enables you to make prediction for Corona virus in India.
 To use this first run all the python files seperately and make a pickle file for each of the predictions i.e. Confirmed cases, Active cases, Recovered cases, Deaths for corona virus.
 Create 2 new folders namely static and templates.
