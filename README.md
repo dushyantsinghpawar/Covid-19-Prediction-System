@@ -54,5 +54,6 @@ project_root/
 ## Contributor
 
 - **Bhagyesh Tiwari**
+- **Dushyant Singh Pawar**
 
 Feel free to customize the project structure, styles, or any other aspect based on your preferences. Ensure that you have the required dependencies installed (Flask, pandas, etc.) before running the application.
