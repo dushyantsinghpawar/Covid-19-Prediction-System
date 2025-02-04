@@ -1,6 +1,6 @@
 import pandas as pd
 
-data = pd.read_csv('covid_19_data[2].csv')
+data = pd.read_csv('covid_19_data.csv')
 india_data = data[data['Country/Region']=='India'].groupby('ObservationDate')['Confirmed','Recovered','Deaths'].sum()
 df = india_data.groupby('ObservationDate').sum()['Confirmed'].reset_index()
 df = df[['ObservationDate', 'Confirmed']].dropna()
